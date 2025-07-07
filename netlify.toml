@@ -1,11 +1,6 @@
-# Plik konfiguracyjny dla Netlify z oficjalnym pluginem dla Next.js
-# To jest ostateczna i zalecana konfiguracja.
+# This is the only configuration needed.
+# The official Netlify plugin for Next.js will automatically handle
+# the build command and publish directory.
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-[build]
-  command = "npm run build"
-
-# Usunięto błędną konfigurację 'publish' i 'redirects'.
-# Netlify automatycznie wykryje, że to projekt Next.js i użyje poprawnych ustawień. 
+  package = "@netlify/plugin-nextjs" 
