@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-import slug from 'remark-slug';
+import remarkSlug from 'remark-slug';
 import { visit } from 'unist-util-visit';
 import { Root } from 'mdast';
 
@@ -51,7 +51,7 @@ export async function getPostData(slug: string) {
   const headings: { level: number; text: string; slug: string }[] = [];
 
   const processedContent = await remark()
-    .use(slug)
+    .use(remarkSlug)
     .use(() => (tree: Root) => {
       visit(tree, 'heading', (node) => {
         headings.push({
