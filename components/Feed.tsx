@@ -32,9 +32,7 @@ const Feed = () => {
       setIsLoading(true);
       setError(null);
       try {
-        const res = await fetch(
-          "https://api.rss2json.com/v1/api.json?rss_url=https://xcancel.com/cryptojim_com/rss"
-        );
+        const res = await fetch('/api/xfeed');
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
