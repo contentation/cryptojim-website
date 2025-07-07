@@ -18,8 +18,8 @@
     "next": "^14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "remark": "^15.0.1",
-    "remark-html": "^16.0.1",
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2",
     "remark-slug": "^7.0.1",
     "tailwind-variants": "^0.2.1",
     "unist-util-visit": "^5.0.0"
