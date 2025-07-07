@@ -5,7 +5,7 @@ export default function Blog() {
   const allPostsData = getSortedPostsData();
 
   return (
-    <div className="min-h-screen bg-background text-white font-sans">
+    <>
       <header className="py-12 px-4 text-center">
         <h1 className="text-5xl font-bold tracking-tight">CryptoJim Blog</h1>
         <p className="text-lg text-gray-400 mt-2">Analysis, guides, and news from the crypto world.</p>
@@ -29,6 +29,6 @@ export default function Blog() {
           ))}
         </div>
       </main>
-    </div>
+    </>
   );
 } 

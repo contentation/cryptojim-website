@@ -3,6 +3,9 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import slug from 'remark-slug';
+import { visit } from 'unist-util-visit';
+import { Root } from 'mdast';
 
 const postsDirectory = path.join(process.cwd(), '_posts');
 
@@ -45,14 +48,28 @@ export async function getPostData(slug: string) {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const matterResult = matter(fileContents);
 
+  const headings: { level: number; text: string; slug: string }[] = [];
+
   const processedContent = await remark()
+    .use(slug)
+    .use(() => (tree: Root) => {
+      visit(tree, 'heading', (node) => {
+        headings.push({
+          level: node.depth,
+          text: (node.children[0] as any).value,
+          slug: (node.data as any)?.hProperties?.id,
+        });
+      });
+    })
     .use(html)
     .process(matterResult.content);
+    
   const contentHtml = processedContent.toString();
 
   return {
     slug,
     contentHtml,
+    headings,
     ...(matterResult.data as { date: string; title: string; author: string }),
   };
 } 
