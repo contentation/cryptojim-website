@@ -1,3 +1,9 @@
+# Plik konfiguracyjny dla Netlify z oficjalnym pluginem dla Next.js
+# To jest ostateczna i zalecana konfiguracja.
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [build]
   command = "npm run build"
 
