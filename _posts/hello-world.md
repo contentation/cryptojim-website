@@ -1,25 +1,25 @@
 ---
-title: 'Witaj Świecie Crypto! Pierwszy Post na CryptoJim'
+title: 'Hello Crypto World! First Post on CryptoJim'
 date: '2025-07-08'
 author: 'CryptoJim'
-excerpt: 'Oto pierwszy post na nowym, zoptymalizowanym pod SEO blogu. Zobacz, jak łatwo można tworzyć treści za pomocą plików Markdown w Next.js.'
+excerpt: 'This is the first post on the new, SEO-optimized blog. See how easy it is to create content using Markdown files in Next.js.'
 coverImage: '/images/posts/hello-world/cover.jpg'
 ---
 
-## Narodziny Bloga
+## The Birth of a Blog
 
-Witaj na nowym blogu CryptoJim. To miejsce, gdzie będziemy zgłębiać tajniki technologii blockchain, analizować tokeny i dzielić się najgorętszymi newsami ze świata krypto.
+Welcome to the new CryptoJim blog. This is the place where we will explore the secrets of blockchain technology, analyze tokens, and share the hottest news from the crypto world.
 
-Został on zbudowany w oparciu o **Next.js** i pliki **Markdown**, co zapewnia niesamowitą szybkość działania i doskonałe wyniki SEO.
+It was built based on **Next.js** and **Markdown** files, which ensures incredible speed and excellent SEO results.
 
-### Co to oznacza dla Ciebie?
+### What does this mean for you?
 
-*   **Błyskawiczne ładowanie:** Każdy post to statyczny plik HTML.
-*   **Bezpieczeństwo:** Brak bazy danych do zhakowania.
-*   **Treści najwyższej jakości:** Skupiamy się na dostarczaniu wartościowych informacji bez zbędnych rozpraszaczy.
+*   **Lightning-fast loading:** Every post is a static HTML file.
+*   **Security:** No database to hack.
+*   **Top-quality content:** We focus on delivering valuable information without unnecessary distractions.
 
-Oto przykład wstawionego obrazka. Na razie to tylko placeholder, ale pokazuje, jak to działa:
+Here is an example of an embedded image. It's just a placeholder for now, but it shows how it works:
 
 ![Placeholder Image](/images/placeholder.jpg)
 
-Spodziewaj się regularnych analiz, poradników i unikalnych spojrzeżeń na rynek. Do zobaczenia! 
+Expect regular analysis, guides, and unique insights into the market. See you there! 

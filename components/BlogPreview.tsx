@@ -8,9 +8,9 @@ export function BlogPreview() {
   return (
     <section>
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-semibold">📰 Najnowsze posty</h2>
+        <h2 className="text-2xl font-semibold">📰 Latest Posts</h2>
         <Link href="/blog" className="text-green-400 hover:text-green-300 transition-colors">
-          Zobacz wszystkie &rarr;
+          View all &rarr;
         </Link>
       </div>
       <div className="space-y-4">

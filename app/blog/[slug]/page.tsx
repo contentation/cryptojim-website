@@ -41,7 +41,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
           <div className="mt-12">
             <Link href="/blog" className="text-green-400 hover:text-green-300 transition-colors">
-              &larr; Wróć do bloga
+              &larr; Back to blog
             </Link>
           </div>
         </article>
