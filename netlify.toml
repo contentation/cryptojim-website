@@ -1,8 +1,5 @@
 [build]
   command = "npm run build"
-  publish = "dist"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200 
+# Usunięto błędną konfigurację 'publish' i 'redirects'.
+# Netlify automatycznie wykryje, że to projekt Next.js i użyje poprawnych ustawień. 
